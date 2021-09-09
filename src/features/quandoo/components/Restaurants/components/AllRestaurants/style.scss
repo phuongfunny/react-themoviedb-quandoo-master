@@ -1,0 +1,109 @@
+#all-restaurants {
+  margin-top: 30px;
+  .container {
+    padding: 0;
+    .all-items {
+      display: flex;
+      flex-wrap: wrap;
+      .content {
+        width: 25%;
+      }
+    }
+    .btn-more {
+      margin-top: 30px;
+      width: 13%;
+      padding: 12px;
+      background-color: #fff;
+      color: orange;
+      font-size: 1.1em;
+      font-weight: 600;
+      border: 1px solid #c2c2c2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: orange;
+        color: #fff;
+        border: 1px solid orange;
+      }
+    }
+  }
+  .title-head {
+    text-align: left;
+    h2 {
+      font-size: 1.3em;
+      color: #3a4354;
+      font-weight: 700;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  #all-restaurants {
+    .container {
+      padding: 0 24px;
+    }
+    .all-items .content {
+      width: 100% !important;
+    }
+    .content-box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      &__infor {
+        margin-left: 20px;
+        &--type {
+          flex-direction: column;
+        }
+        &--location {
+          justify-content: flex-start !important;
+          .comment {
+            margin-left: 20px;
+          }
+        }
+      }
+      &__thumbnail {
+        max-width: 176px;
+      }
+    }
+    .btn-more {
+      width: 100% !important;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #all-restaurants {
+    .btn-more {
+      width: 100% !important;
+    }
+    .all-items .content {
+      width: 100% !important;
+    }
+    .content-box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      &__infor {
+        margin-left: 20px;
+        &--type {
+          flex-direction: column;
+        }
+        &--location {
+          justify-content: flex-start !important;
+          .comment {
+            margin-left: 20px;
+          }
+        }
+      }
+      &__thumbnail {
+        max-width: 240px;
+      }
+    }
+  }
+}

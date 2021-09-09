@@ -1,0 +1,15 @@
+.top-link {
+  display: flex;
+  span {
+    margin-left: 10px;
+    color: rgba(58, 67, 84, 0.7);
+  }
+  a {
+    color: rgba(58, 67, 84, 0.7);
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  a {
+    font-size: 13px;
+  }
+}

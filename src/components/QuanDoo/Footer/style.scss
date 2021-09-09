@@ -1,0 +1,74 @@
+.content-footer {
+  background-color: #232833;
+  padding: 50px;
+  color: #fff;
+  .content-information {
+    display: flex;
+    .ft-social__item {
+      ul {
+        display: flex;
+        li {
+          margin-right: 10px;
+        }
+      }
+    }
+    .infor-list {
+      margin-right: 50px;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: flex;
+      color: rgb(197, 197, 197);
+      line-height: 35px;
+    }
+    h3 {
+      text-align: left;
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+  }
+  .copy-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #c5c5c5;
+  }
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .content-information {
+    flex-direction: column;
+    .infor-list {
+      border-bottom: 2px solid orange;
+      margin-bottom: 10px;
+    }
+    .ft-social__title {
+      display: none;
+    }
+  }
+  .copy-right {
+    span {
+      font-size: 0.6em;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content-information {
+    flex-wrap: wrap;
+    .infor-list {
+      width: 43%;
+      margin-right: 10px !important;
+    }
+  }
+  .copy-right {
+    span {
+      font-size: 0.6em;
+    }
+  }
+}

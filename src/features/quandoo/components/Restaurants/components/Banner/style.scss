@@ -1,0 +1,57 @@
+#banner-restaurants {
+  margin-top: 20px;
+  .banner-content {
+    background-image: linear-gradient(
+        rgba(111, 78, 188, 0.6),
+        rgba(111, 78, 188, 0.6)
+      ),
+      url(https://qap.imgix.net/desktop/singapore.jpg?w=1200&fit=clip&auto=format);
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 60px 0px !important;
+    color: #fff;
+    h2 {
+      font-size: 58px;
+      font-weight: 800;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title {
+    h2 {
+      font-size: 25px !important;
+    }
+    h4 {
+      font-size: 14px;
+    }
+  }
+}
+//mobile
+@media (min-width: 320px) and (max-width: 480px) {
+  #banner-restaurants {
+    a {
+      font-size: 13px;
+    }
+    .banner-content {
+      background-image: url(https://assets-www.web-dev.euwest1.aws.quandoo.com/12.118.0/static/media/white_curve.f70aa317.svg),
+        linear-gradient(rgba(111, 78, 188, 0.6), rgba(111, 78, 188, 0.6)),
+        url(https://qap.imgix.net/mobile/singapore.jpg?w=600&fit=clip&auto=format);
+      background-position: -4px calc(100% + 1px), center center, 0% 35%;
+      background-size: 103%, cover, cover;
+      padding-top: 24px;
+      padding-bottom: 42px;
+      border-radius: 0;
+      background-repeat: no-repeat;
+      h2 {
+        font-size: 28px;
+      }
+      h4 {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.list-restaurants {
+  &__title {
+    color: rgba(58, 67, 84, 0.7);
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    text-align: left;
+  }
+  &__item {
+    margin: 20px -10px 0px -10px;
+    overflow: hidden;
+    .content {
+      padding: 0px 10px;
+    }
+    .content-box {
+      &__thumbnail {
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+      }
+      &__thumbnail--view {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 7px;
+        right: 8px;
+        border-radius: 5px;
+        padding: 2px 7px;
+        font-size: 0.8em;
+        background-color: red;
+        color: #fff;
+        svg {
+          font-size: 1em;
+        }
+      }
+      &__infor {
+        padding: 10px 0;
+        text-align: left;
+        &--name {
+          color: #3a4354;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+          .new {
+            margin-right: 10px;
+            background-color: rgb(248, 179, 51);
+            padding: 0px 8px;
+            border-radius: 5px;
+            line-height: 22px;
+          }
+        }
+        h4 {
+          font-size: 1em;
+          margin-bottom: 0;
+        }
+        &--type,
+        &--location {
+          color: #8b8a8a;
+          font-size: 0.9em;
+          margin-top: 5px;
+          .rate {
+            background-color: #53ca83;
+            padding: 1px 5px;
+            border-radius: 5px;
+            color: #fff;
+          }
+        }
+      }
+      .price {
+        margin-left: 5px;
+        &::before {
+          content: "•";
+          margin-right: 5px;
+        }
+        &_bold {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .slider-restaurants {
+    .slick-prev {
+      display: block;
+      z-index: 1;
+      background-color: #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      left: -7px;
+      top: 33%;
+    }
+    .slick-next {
+      display: block;
+      z-index: 1;
+      background-color: #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      right: -7px;
+      top: 33%;
+    }
+    .slick-prev,
+    .slick-next {
+      &::before {
+        font-size: 30px;
+        color: #000;
+        line-height: 1.5;
+      }
+    }
+    .slick-disabled {
+      display: none !important;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .list-restaurants {
+    &__title {
+      font-size: 16px;
+    }
+  }
+}

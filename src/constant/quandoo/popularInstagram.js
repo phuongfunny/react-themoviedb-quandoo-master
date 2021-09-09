@@ -1,0 +1,83 @@
+export const popularInstagram = {
+  title: "Restaurants with the most foodie followers",
+  data: [
+    {
+      id: 1111,
+      image:
+        "https://qul.imgix.net/c817c632-2564-4f0d-9318-92e48cf08f7f/403658_sld.jpg?auto=format&w=288&h=162&fit=crop",
+      title: "FOOK KIN 福劲",
+      type: "Orchard",
+      location: "Asian Fusion",
+      price: 2,
+      view: 3400,
+      rate: 5.2,
+      comment: 621,
+      new: false,
+    },
+    {
+      id: 2222,
+      image:
+        "https://qul.imgix.net/6d8e9f89-3305-4ddb-a72a-c223fd6e220f/400281_sld.jpg?auto=format&w=288&h=162&fit=crop",
+      title: "Sushi Airways",
+      type: "Bugis",
+      location: "Japanese",
+      price: 3,
+      view: 914,
+      rate: 5.4,
+      comment: 335,
+      new: false,
+    },
+    {
+      id: 3333,
+      image:
+        "https://qul.imgix.net/99909c92-7838-4a73-9637-47eb18a2d9bd/386376_sld.jpg?auto=format&w=288&h=162&fit=crop",
+      title: "Flavour Flings",
+      type: "Hougang",
+      location: "Western",
+      price: 3,
+      view: 9600,
+      rate: 4.9,
+      comment: 321,
+      new: false,
+    },
+    {
+      id: 4444,
+      image:
+        "https://qul.imgix.net/3fc3f7cd-4c72-4872-9877-c00271467a90/182716_sld.jpg?auto=format&w=288&h=162&fit=crop",
+      title: "Little House of Dreams",
+      type: "Tiong Bahru",
+      location: "Cake & Coffee",
+      price: 2,
+      view: 13500,
+      rate: 4.3,
+      comment: 40,
+      new: false,
+    },
+    {
+      id: 5555,
+      image:
+        "https://qul.imgix.net/fa995f3b-8c70-48f5-ac0c-4f72f9656168/560971_sld.jpg?auto=format&w=288&h=162&fit=crop",
+      title: "Chef's Table by Chef Stephan Zoisl",
+      type: "Tangjong Pagar",
+      location: "European",
+      price: 3,
+      view: 8200,
+      rate: 5.6,
+      comment: 159,
+      new: false,
+    },
+    {
+      id: 6666,
+      image:
+        "https://qul.imgix.net/dbf1ede1-c1c9-4f62-b0d5-8365cf472e33/280011_sld.jpg?auto=format&w=288&h=162&fit=crop",
+      title: "Bar on Chulia",
+      type: "Raffles",
+      location: "Eat & Drink",
+      price: 3,
+      view: 0,
+      rate: 4.9,
+      comment: 127,
+      new: false,
+    },
+  ],
+};

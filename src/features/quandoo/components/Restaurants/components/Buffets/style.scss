@@ -1,0 +1,22 @@
+#popular-buffets {
+  margin-top: 25px;
+  .container {
+    padding: 0;
+    .title-head {
+      display: flex;
+      align-items: flex-start;
+      h2 {
+        font-size: 1.3em;
+        color: rgb(58, 67, 84);
+        font-weight: 700;
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #popular-buffets {
+    .container {
+      padding: 0 24px;
+    }
+  }
+}
