@@ -22,7 +22,7 @@ function ListMovie(props) {
     window.addEventListener("scroll", () => {
       if (
         window.scrollY + window.innerHeight ===
-        listItem.clientHeight + listItem.offsetTop
+        listItem.clientHeight + listItem.offsetTop + footer.clientHeight
       ) {
         dispatch(
           getListMoviesRequest({

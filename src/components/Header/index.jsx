@@ -39,7 +39,7 @@ function Header(props) {
                 Movies
                 {subMovie && (
                   <div className="pop-movie popup-sub">
-                    <Link to="/list-movie">Popular</Link>
+                    <Link to="/movies">Popular</Link>
                     <a href="/">Now Playing</a>
                     <a href="/">Upcoming</a>
                     <a href="/">Top Rated</a>
